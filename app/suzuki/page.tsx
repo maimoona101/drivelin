@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"; // Import the Image component
 import Navbar from "../navbar/page";
 
 function SuzukiAlto() {
@@ -13,9 +14,11 @@ function SuzukiAlto() {
 
                     {/* Image Section */}
                     <div className="border-2 w-full max-w-md mx-auto border-black">
-                        <img
-                            src="./SuzukiAlto.png"
-                            alt="Home Image"
+                        <Image
+                            src="/SuzukiAlto.png" // Image path (must be in the public folder)
+                            alt="Suzuki Alto"
+                            width={500} // Specify image width
+                            height={320} // Specify image height
                             className="w-full h-80 transition-transform duration-300 ease-in-out transform hover:scale-105"
                         />
                     </div>

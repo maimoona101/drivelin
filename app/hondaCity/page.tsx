@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"; // Import the Image component
 import Navbar from "../navbar/page";
 
 function HondaCity() {
@@ -13,9 +14,11 @@ function HondaCity() {
 
                     {/* Image Section */}
                     <div className="border-2 w-full max-w-md mx-auto border-black">
-                        <img
-                            src="./HondaCity.png"
-                            alt="Home Image"
+                        <Image
+                            src="/HondaCity.png" // Image path assumes file is in the public folder
+                            alt="Honda Civic"
+                            width={500} // Set image width
+                            height={320} // Set image height
                             className="w-full h-80 transition-transform duration-300 ease-in-out transform hover:scale-105"
                         />
                     </div>
@@ -69,7 +72,7 @@ function HondaCity() {
                     </Link>
                     <br /><br />
 
-                    <div className="py-1 bg-blackblack text-white text-center">
+                    <div className="py-1 bg-black text-white text-center">
                         Footer (HomeWork class-6) <br />
                         | Maimoona | GIAIC
                     </div>

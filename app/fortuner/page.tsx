@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"; // Import the Image component
 import Navbar from "../navbar/page";
 
 function Fortuner() {
@@ -13,9 +14,11 @@ function Fortuner() {
                     
                     {/* Image Section */}
                     <div className="border-2 w-full max-w-md mx-auto border-black">
-                        <img
-                            src="./Fortuner.png"
-                            alt="Home Image"
+                        <Image
+                            src="/Fortuner.png" // Use absolute path from the public folder
+                            alt="Fortuner Image"
+                            width={500} // Set width
+                            height={320} // Set height
                             className="w-full h-80 transition-transform duration-300 ease-in-out transform hover:scale-105"
                         />
                     </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"; // Import the Image component
 import Navbar from "../navbar/page";
 
 function Corolla() {
@@ -13,9 +14,11 @@ function Corolla() {
 
                     {/* Image section */}
                     <div className="border-2 w-full max-w-md mx-auto border-black">
-                        <img
-                            src="./Corolla.png"
+                        <Image
+                            src="/Corolla.png" // Use absolute path
                             alt="Toyota Corolla"
+                            width={500} // Set width (adjust as needed)
+                            height={320} // Set height (adjust as needed)
                             className="w-full h-80 p-2 transition-transform duration-300 ease-in-out transform hover:scale-105"
                         />
                     </div>
